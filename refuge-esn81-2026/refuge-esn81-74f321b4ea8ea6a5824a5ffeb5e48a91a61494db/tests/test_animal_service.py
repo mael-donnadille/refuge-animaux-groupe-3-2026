@@ -20,7 +20,7 @@ def donnees_animal(species_id):
         "name": "Nouk",
         "age": 3,
         "description": "Chien tres gentil",
-        "gender": "male",
+        "gender": "Mâle",
         "photo_url": "https://placedog.net/400",
         "species_id": species_id,
     }
@@ -37,7 +37,7 @@ def test_create_animal(db):
     assert result.id is not None
     assert result.name == "Nouk"
     assert result.age == 3
-    assert result.gender == "male"
+    assert result.gender == "Mâle"
     assert result.species_id == espece.id
 
 

@@ -4,7 +4,7 @@ ANIMAL = {
     "name": "Nouk",
     "age": 3,
     "description": "Chien tres gentil",
-    "gender": "male",
+    "gender": "Mâle",
     "photo_url": "https://placedog.net/400",
     "species_id": 1,
 }
