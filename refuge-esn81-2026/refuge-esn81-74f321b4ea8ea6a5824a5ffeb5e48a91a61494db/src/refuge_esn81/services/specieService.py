@@ -11,4 +11,4 @@ class SpecieService:
         return db_specie
 
     def get_species(self, db: Session, skip: int = 0, limit: int = 100):
-        return db.query(Species).offset(skip).limit(limit)
+        return db.query(Species).offset(skip).limit(limit).all()
