@@ -1,0 +1,20 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: refuge-groupe3-mysql
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: animals
+      MYSQL_USER: refuge
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+    ports:
+      - "10.172.10.46:3308:3306"
+
+    volumes:
+      - refuge_mysql_data:/var/lib/mysql
+
+volumes:
+  refuge_mysql_data:
