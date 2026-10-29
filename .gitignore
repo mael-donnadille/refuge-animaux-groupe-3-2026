@@ -1,8 +1,10 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 .pytest_cache/
+.mypy_cache/
 .coverage
+*.log
 
 # Environnements virtuels
 .venv/
@@ -11,6 +13,7 @@ venv/
 # Configuration locale
 .env
 .env.*
+!.env.example
 
 # IDE
 .idea/
