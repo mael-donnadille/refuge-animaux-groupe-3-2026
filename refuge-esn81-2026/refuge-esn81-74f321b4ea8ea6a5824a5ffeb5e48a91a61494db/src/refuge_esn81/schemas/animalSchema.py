@@ -3,7 +3,10 @@ from refuge_esn81.schemas.speciesSchema import Species
 
 class AnimalBase(BaseModel):
     name: str
-    # A compléter
+    age: int
+    description: str
+    gender: str
+    photo_url: str
     species_id: int
 
 class AnimalCreate(AnimalBase):
@@ -11,7 +14,6 @@ class AnimalCreate(AnimalBase):
 
 class Animal(AnimalBase):
     id: int
-    # A compléter
     species: Species
 
     class Config:
